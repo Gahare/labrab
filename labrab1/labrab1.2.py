@@ -1,2 +1,2 @@
-d = int(input())
+d = int(input('Введите диаметр:'))
 print('L =',round(3.14*d,5))
