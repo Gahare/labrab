@@ -1,3 +1,7 @@
 a = float(input())
 b = float(input())
-print(-b/a)
+c = float(input())
+a2 = float(input())
+b2 = float(input())
+c2 = float(input())
+
