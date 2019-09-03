@@ -1,5 +1,7 @@
 a = input()
 b = input()
-a,b=b,a
+c= input()
+a,b,c=b,c,a
 print(a)
 print(b)
+print(c)
