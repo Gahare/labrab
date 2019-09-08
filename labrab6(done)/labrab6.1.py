@@ -1,3 +1,3 @@
-a=float(input())
-b=a%60
+a = float(input())
+b = a % 60
 print(b)

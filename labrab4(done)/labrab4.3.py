@@ -1,6 +1,6 @@
 x = float(input())
 a = float(input())
 y = float(input())
-cen = a/x
+cen = a / x
 print(cen)
-print(cen*y)
+print(cen * y)

@@ -1,3 +1,3 @@
 a = float(input('Введите первое число:'))
 b = float(input('Введите второе число:'))
-print((a+b)/2)
+print((a + b) / 2)
