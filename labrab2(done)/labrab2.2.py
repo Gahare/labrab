@@ -1,3 +1,4 @@
+#расстояние между точками на оси, сумма
 ax = int(input())
 bx = int(input())
 cx = int(input())

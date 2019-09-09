@@ -1,3 +1,4 @@
+#8 степень
 a = float(input())
 b = a * a
 a = b * b
