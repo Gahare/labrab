@@ -1,7 +1,7 @@
 #расстояние между точками на оси, сумма
-ax = int(input())
-bx = int(input())
-cx = int(input())
+ax = float(input())
+bx = float(input())
+cx = float(input())
 ac = abs(ax - cx)
 bc = abs(bx - cx)
 print(ac)
