@@ -1,5 +1,3 @@
-import math
-
 ax = int(input())
 bx = int(input())
 cx = int(input())
