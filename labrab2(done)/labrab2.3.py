@@ -2,6 +2,9 @@
 ax = float(input())
 bx = float(input())
 cx = float(input())
-ac = abs(ax - cx)
-bc = abs(bx - cx)
-print(ac * bc)
+if cx>ax and cx<bx:
+    ac = abs(ax - cx)
+    bc = abs(bx - cx)
+    print(ac * bc)
+else:
+    print('Некорректные данные')
