@@ -1,4 +1,4 @@
-#цена конфет
+# цена конфет
 x = float(input())
 a = float(input())
 y = float(input())
