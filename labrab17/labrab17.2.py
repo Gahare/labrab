@@ -6,15 +6,26 @@ for i in range(n):
 base = a[0]
 basein = 0
 count = 1
-for i in range(1, n):
-    if a[i] == base:
+w = 1
+while True:
+    try:
+        a[w] = a[w]
+    except IndexError:
+        if count > l:
+            for z in range(count):
+                a.remove(a[basein])
+            a.insert(basein, 0)
+        break
+    if a[w] == base:
         count += 1
     else:
         if count > l:
             for z in range(count):
                 a.remove(a[basein])
-            a.insert(0, basein)
-        base = a[i - z]
-        count = 1
-        basein = i - z
+            a.insert(basein, 0)
+            base = a[w - z]
+            count = 1
+            basein = w - z
+            w = w - z
+    w = w + 1
 print(a)
