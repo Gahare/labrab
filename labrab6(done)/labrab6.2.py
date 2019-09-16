@@ -1,3 +1,5 @@
-a = float(input())
+a = int(input("Введите день:"))
+if 1 > a > 365:
+    print("Некорректные данные")
 b = a % 7
-print(b)
+print(b, "день недели")

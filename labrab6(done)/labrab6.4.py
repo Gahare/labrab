@@ -1,7 +1,9 @@
-a = float(input())
-b = float(input())
-c = float(input())
+a = float(input("Ширина прямоугольника:"))
+b = float(input("Длина прямоугольника:"))
+c = float(input("Сторона квадрата:"))
+if a <= 0 or b <= 0 or c <= 0:
+    print()
 ac = a // c
 bc = b // c
-print(ac * bc)
-print(a * b - ac * bc * c * c)
+print("Кол-во квадратов -", ac * bc)
+print("Остаток площади -", a * b - ac * bc * c * c)

@@ -1,3 +1,3 @@
-a = float(input())
+a = int(input("Введите секунды:"))
 b = a % 60
-print(b)
+print("Секунд с последней минуты", b)
