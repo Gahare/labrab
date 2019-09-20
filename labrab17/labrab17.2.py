@@ -13,7 +13,7 @@ while True:
     except IndexError:
         if count > l:
             for z in range(count):
-                a.remove(a[basein])
+                del a[basein]
             a.insert(basein, 0)
         break
     if a[w] == base:
@@ -21,11 +21,13 @@ while True:
     else:
         if count > l:
             for z in range(count):
-                a.remove(a[basein])
+                del a[basein]
             a.insert(basein, 0)
             base = a[w - z]
             count = 1
             basein = w - z
             w = w - z
+        base = a[w]
+        basein = w
     w = w + 1
 print(a)

@@ -10,7 +10,7 @@ while True:
     except IndexError:
         break
     if a[z] == nach:
-        a.remove(a[z])
+        del a[z]
     else:
         nach = a[z]
         z = z + 1

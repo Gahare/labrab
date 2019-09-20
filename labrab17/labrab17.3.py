@@ -35,17 +35,34 @@ lastnum = a[lastseriebegin]
 deltak = kserieend - kseriebegin + 1
 deltalast = lastserieend - lastseriebegin + 1
 while deltak != 0:
-    a.remove(a[kseriebegin])
+    del a[kseriebegin]
     deltak -= 1
 deltak = kserieend - kseriebegin + 1
 while deltalast != 0:
-    a.remove(a[lastseriebegin - deltak])
+    del a[lastseriebegin - deltak]
     deltalast -= 1
 deltalast = lastserieend - lastseriebegin + 1
-while deltak != 0:
-    a.insert(kseriebegin, lastnum)
-    deltak -= 1
-while deltalast != 0:
-    a.insert(lastseriebegin, knum)
-    deltalast -= 1
+klenght = kserieend - kseriebegin + 1
+lastlenght = lastserieend - lastseriebegin + 1
+if klenght == lastlenght:
+    while deltalast != 0:
+        a.insert(kseriebegin, lastnum)
+        deltalast -= 1
+    while deltak != 0:
+        a.insert(lastseriebegin, knum)
+        deltak -= 1
+elif klenght > lastlenght:
+    while deltalast != 0:
+        a.insert(kseriebegin, lastnum)
+        deltalast -= 1
+    while deltak != 0:
+        a.insert(lastseriebegin, knum)
+        deltak -= 1
+else:
+    while deltalast != 0:
+        a.insert(kseriebegin + (lastlenght - klenght), lastnum)
+        deltalast -= 1
+    while deltak != 0:
+        a.insert(lastseriebegin, knum)
+        deltak -= 1
 print(a)

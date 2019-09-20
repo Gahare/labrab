@@ -17,6 +17,7 @@ while True:
     z = z + 1
 z = 0
 for i in b:
+    z = 0
     if b[i] == 2:
         while True:
             try:
@@ -24,7 +25,7 @@ for i in b:
             except IndexError:
                 break
             if a[z] == i:
-                a.remove(a[z])
+                del a[z]
                 count += 1
             else:
                 if count < 2:
