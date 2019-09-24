@@ -1,14 +1,10 @@
 n = int(input())
 a = []
 for i in range(n):
-    a.append(float(input()))
+    a.append(int(input()))
 nach = a[0]
 z = 1
-while True:
-    try:
-        a[z] = a[z]
-    except IndexError:
-        break
+while z < len(a):
     if a[z] == nach:
         del a[z]
     else:

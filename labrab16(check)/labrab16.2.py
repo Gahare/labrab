@@ -5,11 +5,7 @@ for i in range(n):
 z = 0
 b = {}
 count = 0
-while True:
-    try:
-        a[z] = a[z]
-    except IndexError:
-        break
+while z < len(a):
     if a[z] in b:
         b[a[z]] += 1
     else:
@@ -19,11 +15,7 @@ z = 0
 for i in b:
     z = 0
     if b[i] == 2:
-        while True:
-            try:
-                a[z] = a[z]
-            except IndexError:
-                break
+        while z < len(a):
             if a[z] == i:
                 del a[z]
                 count += 1
@@ -31,5 +23,7 @@ for i in b:
                 if count < 2:
                     z = z + 1
                 else:
+                    count = 0
                     break
+print(len(a))
 print(a)

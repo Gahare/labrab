@@ -1,12 +1,13 @@
+import random
 n = int(input())
 a = []
 change = False
 for i in range(n):
-    a.append(float(input()))
-mux = max(a)
-mix = min(a)
+    a.append(random.uniform(-100, 100))
+maxvalue = max(a)
+minvalue = min(a)
 for i in range(n):
-    if a[i] == mux or a[i] == mix:
+    if a[i] == maxvalue or a[i] == minvalue:
         if change is False:
             change = True
             continue
