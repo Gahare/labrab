@@ -10,10 +10,11 @@ if slash == 1:
 else:
     while slash != 0:
         if a[i] == "\\":
-            b = ''
-        elif a[i] == ".":
-            b = b + a[i]
-            dotcount = dotcount - 1
+            if slash == 1:
+                break
+            else:
+                b = ''
+                slash = slash - 1
         else:
             b = b + a[i]
         i = i + 1

@@ -1,0 +1,7 @@
+a = open("test31.txt")
+b = open("test32.txt")
+c = b.read() + a.read()
+a = open("test31.txt", "w")
+a.close()
+b.close()
+a.write(c)
