@@ -10,7 +10,6 @@ for i in range(n):
         a[i][j] = float(input())
 listmax = a[0][0]
 listmin = a[0][0]
-print(a)
 for i in range(n):
     for j in range(m):
         if a[i][j] > listmax:
