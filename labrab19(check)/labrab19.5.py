@@ -1,6 +1,7 @@
 m = int(input())  # vniz
 a = [0] * m
-sum = 0
+allsum = 0
+promsum=0
 for i in range(m):
     a[i] = [0] * m
 for i in range(m):
@@ -9,11 +10,18 @@ for i in range(m):
 for i in range(1, m):
     w = i
     for z in range(m - i):
-        sum = sum + a[w][z]
+        promsum=promsum+a[w][z]
         w = w + 1
+    allsum= allsum + promsum
+    print(promsum)
+    promsum=0
 for i in range(1, m):
     w = i
     for z in range(m - i):
-        sum = sum + a[z][w]
+        promsum=promsum+a[z][w]
         w = w + 1
-print(sum)
+    allsum= allsum + promsum
+    print(promsum)
+    promsum=0
+print(a)
+print(allsum)

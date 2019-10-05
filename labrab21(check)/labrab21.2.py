@@ -7,7 +7,7 @@ for i in range(len(a)):
         check = False
         if wordlen < minwordlen:
             minwordlen = wordlen
-            wordlen = 0
+        wordlen = 0
     if a[i] != " ":
         check = True
         wordlen = wordlen + 1

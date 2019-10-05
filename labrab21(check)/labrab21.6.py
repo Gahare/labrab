@@ -18,4 +18,4 @@ else:
         else:
             b = b + a[i]
         i = i + 1
-print(b[0:len(b) - 1])
+print(b[0:len(b)])

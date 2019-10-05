@@ -8,6 +8,7 @@ for i in range(n):
 for i in range(n):
     for j in range(m):
         a[i][j] = float(input())
+print(a)
 listmax = a[0][0]
 listmin = a[0][0]
 for i in range(n):
